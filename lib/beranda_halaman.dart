@@ -6,32 +6,32 @@ class BerandaHalaman extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Daftar Buku'),
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.greenAccent,
       ),
       body: ListView(
         padding: EdgeInsets.all(8),
         children: [
           ListTile(
-            title: Text('Flutter Basics'), 
+            title: Text('Laut Bercerita'), 
             trailing: ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/detail', arguments: {
-                  'judul': 'Flutter Basics',
-                  'penulis': 'John Doe',
-                  'deskripsi': 'A comprehensive guide for Flutter development',
+                  'judul': 'Laut Bercerita',
+                  'penulis': 'Leila S. Chudori',
+                  'deskripsi': 'mengisahkan persahabatan, cinta, dan keluarga'
                 });
               },
               child: Text('Detail'),
             ),
           ),
           ListTile(
-            title: Text('Dart Mastery'),
+            title: Text('Laskar Pelangi'),
             trailing: ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/detail', arguments: {
-                  'judul': 'Dart Mastery',
-                  'penulis': 'Jane Smith',
-                  'deskripsi': 'Learn Dart programming language in-depth',
+                  'judul': 'Laskar Pelangi',
+                  'penulis': ' Andrea Hirata',
+                  'deskripsi': 'mengisahkan tentang sebelas anak yang berasal dari keluarga miskin',
                 });
               },
               child: Text('Detail'),
